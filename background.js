@@ -1,6 +1,6 @@
 // background.js
 
-let officialLinks = ['neotokyo.codes', 'opensea.io'];
+let officialLinks = [];
 
 chrome.runtime.onInstalled.addListener(() => {
   chrome.storage.sync.set({ officialLinks });

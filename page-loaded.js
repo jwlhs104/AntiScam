@@ -5,7 +5,7 @@ chrome.storage.sync.get("officialLinks", ({ officialLinks }) => {
 	officialLinks.forEach(link => {
     similarityOfLink = similarity(link, currentURL);
     console.log(similarityOfLink);
-    if(0.5 < similarityOfLink) {
+    if(0.7 < similarityOfLink) {
       alert(`might be FAKE!!!
         Current URL is ${currentURL}, Do you mean ${link}?`);
     }
