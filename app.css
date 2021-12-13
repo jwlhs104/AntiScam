@@ -1,6 +1,6 @@
 #app{
-  width:380px;
-  height:1000px;
+  min-width:380px;
+  min-height:1000px;
   overflow: hidden;
 }
 
@@ -9,6 +9,22 @@
   height:100%;
   overflow:auto;
   padding-right:15px;
+}
+.links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.removeButton{
+  height:80%;
+  border-radius: 3px;
+  background-color: #e7e7e7;
+  color: black;
+  border: 2px solid #e7e7e7;
+  cursor: pointer;
+}
+.removeButton:hover{
+  background-color: white;
 }
 html, body{
     height: 99%;
